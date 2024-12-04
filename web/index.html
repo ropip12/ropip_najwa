@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website rofiif dan najwa </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+    <div id="mainPage" >
+        <header>
+            <div class="container">
+                <h1><i class="fas fa-book"></i> Toko Buku Lancar Jaya</h1>
+                <nav class="nav-utama">
+                    <nav>
+                        <ul class="menu">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle">Daftar Buku</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#books1">Buku Ujian</a></li>
+                                    <li><a href="#books2">Buku Novel</a></li>
+                                    <li><a href="#books3">Buku Komik</a></li>
+                    </nav>
+                    <a href="#cart">Keranjang</a>
+                    <a href="#" id="profileButton">Profil</a>
+                </nav>
+                <section class="search">
+                    <input type="text" id="searchInput" placeholder="Cari buku berdasarkan judul...">
+                    <button onclick="searchBooks()">Cari</button>
+                </section>
+            </div>
+        </header>
+
+
+
+        <main class="container">
+            <section class="intro">
+                <h2>Selamat Berbelanja di Toko Buku Lancar Jaya</h2>
+                <p>Temukan buku favorit Anda dengan harga terbaik!</p>
+            </section>
+
+            <!-- Daftar Buku -->
+            <section class="book-list" id="books1">
+                <h2>Buku Ujian</h2>
+                <div class="book-grid-scrollable">
+                    <div class="book" data-title="bank soal snbt 2024">
+                        <img src="/foto/buku bank soal snbt 2024.jpg" alt="Buku 1">
+                        <h3>bank soal snbt 2024</h3>
+                        <p>Rp50,000</p>
+                        <button onclick="addToCart('bank soal snbt 2024', 50000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="Bestie snbt 2023">
+                        <img src="/foto/buku bestie snbt 2023.jpg" alt="Buku 2">
+                        <h3>Bestie snbt 2023</h3>
+                        <p>Rp120,000</p>
+                        <button onclick="addToCart('Bestie snbt 2023', 120000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="pakar snbt 2025">
+                        <img src="/foto/buku pakaar snbt 2025.jpg" alt="Buku 3">
+                        <h3>pakar snbt 2025</h3>
+                        <p>Rp80,000</p>
+                        <button onclick="addToCart('pakar snbt 2025', 80000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="siasat snbt 2024">
+                        <img src="/foto/buku siasat snbt 2024.jpg" alt="Buku 4">
+                        <h3>siasat snbt 2024</h3>
+                        <p>Rp80,000</p>
+                        <button onclick="addToCart('siasat snbt 2024', 80000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="buku skd cpns">
+                        <img src="/foto/buku skd cpns.jpg" alt="Buku 5">
+                        <h3>buku skd cpns</h3>
+                        <p>Rp80,000</p>
+                        <button onclick="addToCart('buku skd cpns', 80000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="The king eduka snbt 2023">
+                        <img src="/foto/snbt 2023.jpg" alt="Buku 6">
+                        <h3>The king eduka snbt 2023</h3>
+                        <p>Rp80,000</p>
+                        <button onclick="addToCart('The king eduka snbt 2023', 80000)">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+            </section>
+            <section class="book-list" id="books2">
+                <h2>Novel</h2>
+                <div class="book-grid-scrollable2">
+                    <div class="book" data-title="laut tengah">
+                        <img src="/foto/laut tengah.jpg" alt="Buku 1">
+                        <h3>laut tengah</h3>
+                        <p>Rp50,000</p>
+                        <button onclick="addToCart('laut tengah', 50000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="Laskar pelangi">
+                        <img src="/foto/Laskar_pelangi.jpg" alt="Buku 2">
+                        <h3>Laskar pelangi</h3>
+                        <p>Rp120,000</p>
+                        <button onclick="addToCart('Laskar pelangi', 120000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="sarjana muda">
+                        <img src="/foto/sarjana muda.jpg" alt="Buku 3">
+                        <h3>sarjana muda</h3>
+                        <p>Rp80,000</p>
+                        <button onclick="addToCart('sarjana muda', 80000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="dilan 1991">
+                        <img src="/foto/dilan 1991.jpg" alt="Buku 4">
+                        <h3>dilan 1991</h3>
+                        <p>Rp80,000</p>
+                        <button onclick="addToCart('dilan 1991', 80000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="angkasa dan 56 hari">
+                        <img src="/foto/angkasa dan 56 hari.jpg" alt="Buku 5">
+                        <h3>angkasa dan 56 hari</h3>
+                        <p>Rp80,000</p>
+                        <button onclick="addToCart('angkasa dan 56 hari', 80000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="\senja">
+                        <img src="/foto/senja.jpg" alt="Buku 6">
+                        <h3>senja</h3>
+                        <p>Rp80,000</p>
+                        <button onclick="addToCart('senja', 80000)">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Daftar Buku -->
+            <section class="book-list" id="books3">
+                <h2>Buku Komik</h2>
+                <div class="book-grid-scrollable3">
+                    <div class="book" data-title="keluarga super irit jilit 8">
+                        <img src="/foto/komik keluarga super irit jilit 8.jpg" alt="Buku 1">
+                        <h3>keluarga super irit jilit 8</h3>
+                        <p>Rp50,000</p>
+                        <button onclick="addToCart('keluarga super irit jilit 8', 50000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="si juki seri keroyokan">
+                        <img src="/foto/komik-si-juki-seri-keroyokan.jpg" alt="Buku 2">
+                        <h3>si juki seri keroyokan</h3>
+                        <p>Rp120,000</p>
+                        <button onclick="addToCart('si juki seri keroyokan', 120000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="si juki komik strip">
+                        <img src="/foto/si-juki-komik-strip.jpg" alt="Buku 3">
+                        <h3>si juki komik strip</h3>
+                        <p>Rp80,000</p>
+                        <button onclick="addToCart('si juki komik strip', 80000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="naruto vol 5">
+                        <img src="/foto/naruto vol 5.jpg" alt="Buku 4">
+                        <h3>naruto vol 5</h3>
+                        <p>Rp80,000</p>
+                        <button onclick="addToCart('naruto vol 5', 80000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="naruto vol 66">
+                        <img src="/foto/naruto vol 66.jpg" alt="Buku 5">
+                        <h3>naruto vol 66</h3>
+                        <p>Rp80,000</p>
+                        <button onclick="addToCart('naruto vol 66', 80000)">Tambah ke Keranjang</button>
+                    </div>
+                    <div class="book" data-title="sinchan jilid 1">
+                        <img src="/foto/sinchan jilid 1.webp" alt="Buku 6">
+                        <h3>sinchan jilid 1</h3>
+                        <p>Rp80,000</p>
+                        <button onclick="addToCart('sinchan jilid 1', 80000)">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+            </section>
+
+
+            
+            <section class="cart" id="cart">
+                <h2>Keranjang Buku</h2>
+                <div id="cartItems"></div>
+                <p><strong>Total: Rp<span id="totalPrice">0</span></strong></p>
+                <button id="checkoutButton">Bayar</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Toko Buku Online | Semua Hak Dilindungi</p>
+        </footer>
+
+        <!-- Profil Modal -->
+        <div id="profileModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span id="closeProfile" class="close">&times;</span>
+                <h3>Profil Pengguna</h3>
+                <img id="profileImage" src="/foto/ks.jpg" alt="Profile Picture" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;">
+                <p><strong>Nama:</strong> <span id="profileName">-</span></p>
+                <p><strong>Email:</strong> <span id="profileEmail">-</span></p>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
